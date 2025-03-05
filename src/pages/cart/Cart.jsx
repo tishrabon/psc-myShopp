@@ -10,18 +10,16 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
 
   const cartStyles = {
-    containerz: `grid grid-rows-2 sm:grid-cols-2 justify-center, items-center gap-x-2 w-[98%] min-w-[350px] gap-y-1`,
-    containerz2: `flex flex-col sm:flex-row justify-center, items-start gap-x-2 w-[98%] min-w-[350px] gap-y-1`,
+    container: `grid sm:grid-cols-2 sm:justify-between sm:items-start place-items-center gap-x-2 w-[98%] gap-y-1`,
 
-    container: `grid sm:grid-cols-2 justify-between, items-start gap-x-2 w-[98%] min-w-[350px] gap-y-1`,
     billboard: `w-full bg-green-600 text-white p-2 rounded-md font-bold mb-2`, 
-    cartList: `box-shadow rounded-md mb-4 pb-3 flex flex-col justify-center items-center flex-1`, 
+    cartList: `box-shadow rounded-md mb-4 pb-3 flex flex-col justify-center items-center flex-1 w-[95%]`, 
     orderList: `box-shadow p-1 rounded-md`, 
     lines: `p-1`, 
     box: `bg-gray-100 m-1 p-1 rounded-md`, 
     // B O R D E R //
 
-    proceed: `box-shadow rounded-md mb-4 pb-3 flex flex-col justify-center items-center flex-1`,
+    proceed: `box-shadow rounded-md mb-4 pb-3 flex flex-col justify-center items-center flex-1 w-[95%]`,
   };
   
   const dispatch = useDispatch();

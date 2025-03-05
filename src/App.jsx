@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './compos';
-import { Home, Login, Register, Reset, Contact, OrderHistory, Cart, User, UpdateUser, AdminPanel, ProjectDocument } from './pages'; 
+import { Home, Login, Register, Reset, OrderHistory, Cart, User, UpdateUser, AdminPanel, ProjectDocument } from './pages'; 
 import ProductPage from './compos/products/ProductPage';
 import 'react-toastify/dist/ReactToastify.css';
 import ScrollTop from './ScrollTop';
@@ -10,7 +9,7 @@ import ScrollTop from './ScrollTop';
 function App() {
 
   return (
-    <div className="flex flex-col justify-start items-center w-full">
+    <div className="flex flex-col justify-start items-center w-full max-w-[100vw">
       <div className="flex flex-col justify-start items-center font-myfont w-full">
         <Header />
 
@@ -19,12 +18,9 @@ function App() {
 
           <Routes>          
             <Route path="/" element={<Home />} />
-            {/* <Route path="/" element={<OrderHistory />} /> */}
-            <Route path="/contact" element={<Contact />} />
             <Route path="/orderhistory" element={<OrderHistory />} />
             <Route path="/cart" element={<Cart />} />        
             <Route path="/login" element={<Login />} />
-            {/* <Route path="/logout" element={<Logout />} /> */}
             <Route path="/register" element={<Register />} />
             <Route path="/user" element={<User />} />
             <Route path="/updateuser" element={<UpdateUser />} />

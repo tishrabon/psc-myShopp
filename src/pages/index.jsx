@@ -1,5 +1,5 @@
 import Home from './home/Home';
-import Contact from './contact/Contact';
+// import Contact from './contact/Contact';
 import OrderHistory from './orderHistory/OrderHistory';
 import Cart from './cart/Cart';
 import User from './user/User';
@@ -13,6 +13,6 @@ import ProjectDocument from './projectDoc/ProjectDocument';
 
 
 export {
-  Home, Contact, OrderHistory, Cart, User, UpdateUser,
+  Home, OrderHistory, Cart, User, UpdateUser,
   Login, Register, Reset, AdminPanel, ProjectDocument
 }

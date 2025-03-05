@@ -14,7 +14,7 @@ import { FalseShows } from '../utils/FalseShows';
 
 const Header = () => {
   const head = {
-    container: "sticky top-0 z-[100] border-none flex justify-center items-center bg-maincolor text-white text-[16px] sm:text-base py-3 px-5 mb-3 w-full min-w-[320px]",
+    container: "sticky top-0 z-[100] border-none flex justify-center items-center bg-maincolor text-white text-[16px] sm:text-base py-3 px-5 mb-3 w-full min-w-[320px] max-w-[100vw]",
 
     logoside: "flex flex-row justify-center items-center gap-x-3",
 
@@ -114,9 +114,9 @@ const Header = () => {
         {/* LOGO/HOME */}
         <div className={`${head.logoside}`}>
           <Link to="/"> 
-            <span className={` text-yellow-200 text-[20px] xs:text-[21px] sm:text-[24px] font-bold`}>myShopp</span>
+            <span className={` text-yellow-400 text-[14px] xs:text-[16px] sm:text-[18px] font-bold`}>myShopp</span>
           </Link>
-          <button className="hidden sm:block" onClick={navigateToRecruiters}>
+          <button className="hidden sm:block text-[14px]" onClick={navigateToRecruiters}>
             toRecruiter/Doc
           </button>
         </div>
@@ -144,20 +144,19 @@ const Header = () => {
 
             <TrueShows>
               <li>           
-                <NavLink  to="/user" className="mr-[-5px] sm:mr-0 centaX">                
+                <NavLink  to="/user" className="mr-[-5px] sm:mr-0 centaX text-[12px] sm:text-[16px]">                
                   @{allData && allData.basicDone ? allData.username : "user"} 
                 </NavLink>
               </li>
             </TrueShows>
-
-            {/* EXPERIMENT SUCCESSFULL */}
+          
             <TrueShows>
               <li className={`${allData && allData.admin ? "flex" : "hidden"} sm:ml-[-16px] mb-[-3px]`}>           
-                <NavLink  to="/adminpanel" className="mr-[-15px] sm:mr-0 centaX text-xs text-yellow-200 hover:underline">                                  
+                <NavLink  to="/adminpanel" className="mr-[-15px] sm:mr-0 centaX text-[10px] sm:text-[12px] text-yellow-200 hover:underline">                                  
                   /admin
                 </NavLink>
               </li>
-            </TrueShows>         
+            </TrueShows>
 
             <TrueShows>
               <li>           

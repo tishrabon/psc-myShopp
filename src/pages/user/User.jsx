@@ -74,7 +74,7 @@ const User = () => {
 
   
   return (
-    <section className="centaY w-[370px] xs: [400px] ss:w-[450px] sm:w-[550px]">
+    <section className="centaY w-full sm:w-[550px]">
       
       <div className={userStyle.billboard}>User's Profile</div>
 

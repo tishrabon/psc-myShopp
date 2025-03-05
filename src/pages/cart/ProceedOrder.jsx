@@ -3,19 +3,20 @@ import demoing from '../../compos/products/demo-1.jpg'
 // import { products } from '../../data/productData';
 import { increasePRODUCT, decreasePRODUCT, removeORDER } from '../../redux/slice/userDataSlice';
 import { useSelector, useDispatch } from 'react-redux';
+import { FaTag } from "react-icons/fa";
 
 export const ProceedOrder = ({product}) => {
   const styles = {
-    box: `flex flex-row overflow-hidden w-[95%] h-full bg-gray-100 m-1 rounded-md`,
+    box: `flex flex-row overflow-hidden w-[95%] h-auto bg-gray-100 m-1 rounded-md`,
     // photo: `aspect-w-1 aspect-h-1 w-[45px] h-[45px]`,
     photo: `w-[50px] aspect-square border-none rounded-md overflow-hidden`,
     photoFile: `object-cover w-full h-full`,
-    details: `flex flex-row text-xs justify-between items-center w-[100%] object-cover px-2`,
-    one: `w-[40%] flex flex-col`,
-    two: `w-[30%] mx-1`,
-    three: `w-[30%] overflow-hidden`,
+    details: `flex flex-row text-[10px] xs:text-[12px] justify-between items-center w-[100%] object-cover px-2`,
+    one: `w-[40%] flex flex-col justify-between items-start h-full pb-1`,
+    two: `w-[30%] flex gap-[2px]`,
+    three: `w-[30%] overflow-hidden flex flex-col justify-between items-start h-full pb-1`,
     plusMinus: `bg-gray-300 border-none text-black rounded-sm w-5 mx-1`,
-    removeButton: `border-none bg-red-500 text-white px-1 rounded-sm`,
+    removeButton: `border-none bg-red-500 text-white px-1 rounded-sm text-center`,
   }
 
   const dispatch = useDispatch();
@@ -76,7 +77,14 @@ export const ProceedOrder = ({product}) => {
         <div className={styles.three}>
           <p>
             {product.discount ? 
-              <>${discountPrice(product.price, product.discount)} {` (${product.discount}% Off)`}</>
+              <div>
+                <div>
+                  ${discountPrice(product.price, product.discount)}
+                </div>
+                <div className="flex place-items-center gap-1">
+                  {` ${product.discount}%`} <FaTag />
+                </div>                 
+              </div>
             :
               <>${product.price}</>
             }

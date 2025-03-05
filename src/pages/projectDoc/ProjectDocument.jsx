@@ -1,12 +1,11 @@
 import React, {useState, useRef, useEffect} from 'react';
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { useLocation } from 'react-router-dom';
 import { CiSaveUp2 } from "react-icons/ci";
-import { HiOutlineMail } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
+import { FaGlobe } from "react-icons/fa6";
 
 const ProjectDocument = () => {
 
@@ -137,20 +136,26 @@ const ProjectDocument = () => {
             <div className={docContent}>
               {/* INTRO */}
               <div>
-                Hi, I'm Towhidul Islam Shrabon. You can call me Shrabon. Hopefully you can find me by googling <span className="text-blue-700">tishrabon</span>. I’m currently honing my skills as a front-end developer, with the ultimate goal of becoming a full-stack developer. Feel free to connect with me through my social media links and Gmail address below.
+                Hi, I'm Towhidul Islam Shrabon. You can call me Shrabon. Hopefully you can find me by googling <span className="text-blue-700">tishrabon</span>. I’m currently sharpening my skills as a front-end developer, with the ultimate goal of becoming a full-stack developer. Feel free to connect with me through my social media links and Gmail address below.
+
+                <div>
+                  <span className="text-blue-700">[Update]</span> I’ve now built my own portfolio! 🚀 Feel free to visit my website at <a className="text-blue-700" href="https://tishrabon.github.io" target="_blank" rel="noopener noreferrer">
+                  tishrabon.github.io
+                  </a>. This project was a stepping stone, and my portfolio now showcases more of my work, skills, and what I bring to the table. Let’s connect and make something awesome!
+                </div>
 
                 {/* SOCIAL MEDIA LINKS */}
-                <ul className="m-[10px] border rounded-md p-1 my-1">                  
+                <ul className="m-[10px] border rounded-md p-1 my-1 w-[250px]">       
+                  <li title="My Website: https://tishrabon.github.io/" className="grid grid-cols-[20px_1fr] items-center">
+                    <FaGlobe /> <a target="_blank" rel="noopener noreferrer" href="https://tishrabon.github.io/">tishrabon.github.io</a>
+                  </li>                    
+
                   <li title="linkedIn profile link: https://www.linkedin.com/in/tishrabon/" className="grid grid-cols-[20px_1fr] items-center">
                     <FaLinkedin /> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tishrabon/">in/tishrabon</a>
                   </li>                  
 
                   <li title="Github profile link: https://github.com/tishrabon/" className="grid grid-cols-[20px_1fr] items-center">
                     <FaGithubSquare /> <a target="_blank" rel="noopener noreferrer"  href="https://github.com/tishrabon/">/tishrabon</a> 
-                  </li>
-
-                  <li title="Instagram profile link: https://www.instagram.com/tishrabon/" className="grid grid-cols-[20px_1fr] items-center">
-                    <FaInstagramSquare /> <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/tishrabon/">/tishrabon</a>
                   </li>
 
                   <li title="X profile link: https://x.com/tishrabon" className="grid grid-cols-[20px_1fr] items-center">
@@ -171,7 +176,7 @@ const ProjectDocument = () => {
             <h6 ref={aboutProjectRef} className={docHeading}>About My Project</h6>
             <div className={docContent}>
               <p className={pBlock}>
-                This is my first complete project! I wanted to finish a full project before creating my portfolio, focusing on honing my programming skills rather than just showcasing. It took me quite some time to perfect it, and I’m excited to include this work in my portfolio.
+                This is my first complete project! I wanted to finish a full project before creating my portfolio, focusing on improving my programming skills rather than just showcasing. It took me quite some time to perfect it, and I’m excited to include this work in my portfolio.
               </p>
               <p className={pBlock}>
                 This e-commerce website allows users to create accounts, like products, add items to their cart, and place orders seamlessly. All data is securely stored in a Firestore database, enabling users to log in from anywhere and access their information effortlessly.
@@ -303,11 +308,14 @@ const ProjectDocument = () => {
                 This is not a unique/rare/uncommon idea-based project. I wanted to make something which will include skills and functionalities of coding. That's why I decided to make this kind of project in the first place. To be honest, I focused on functionalities more than designs. 
               </p>
               <p className={pBlock}>
-                This is my first fully-functional front-end application. I didn’t create a portfolio initially because I focused on honing my skills rather than showcasing them. It took time to perfect this project, and if you check my source code, you'll notice my transitions and growth throughout. I won’t share the code here, but I’ll include it in my upcoming portfolio. While I learned from platforms like YouTube, Google, ChatGPT etc, I never copied any code, so my code may not be as polished as a professional’s.         
+                This is my first fully-functional front-end application. I didn’t create a portfolio initially because I focused on improving my skills rather than showcasing them. It took time to perfect this project, and if you check my source code, you'll notice my transitions and growth throughout. I won’t share the code here, but I’ll include it in my upcoming portfolio. While I learned from platforms like YouTube, Google, ChatGPT etc, I never copied any code, so my code may not be as polished as a professional’s.         
               </p>              
               <p className={pBlock}>
                 While working on this project, I learned a great deal and identified many areas for improvement. However, changing the code now would be quite challenging. Therefore, I plan to implement these learnings in my future projects, including my portfolio.
               </p> 
+              <p className={pBlock}>
+                <span className="text-blue-700">[Update]</span> I’ve now built my own portfolio! 🚀 Feel free to visit my website at <a className="text-blue-700" href="https://tishrabon.github.io" target="_blank" rel="noopener noreferrer"> tishrabon.github.io </a>.
+              </p>
               <div className={pBlock}>
                 I genuinely appreciate your time in reviewing my project. If it doesn’t quite resonate with your needs, I invite you to connect on <a title="Developer's LinkedIn Profile Link" className="text-blue-600" target="_blank" rel="noopener noreferrer"  href="https://www.linkedin.com/in/tishrabon/">LinkedIn</a>. My other social media links and Gmail address are listed above <CiSaveUp2 className="inline align-middle cursor-pointer mb-[2px] text-blue-700" onClick={() => {scrollTo(devsRef); setRoute("devs")}} />. I’d love the opportunity to stay in touch for potential future collaborations. Let’s keep the conversation going! Until next time.
               </div>

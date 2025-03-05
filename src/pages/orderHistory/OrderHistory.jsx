@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const OrderHistory = () => {
 
   const styles = {
-    section: `flex flex-col justify-center items-center max-w-[600px] w-full min-w-[350px] overflow-hidden`,
+    section: `flex flex-col justify-center items-center max-w-[600px] w-full overflow-hidden`,
     head: `p-2 mb-3 w-[95%] border-none bg-green-600 rounded-md text-center text-white`,
     block: `px-2 w-[95%]`,  
     orderList: `p-2 mb-3 box-shadow rounded-md flex flex-col gap-y-2`,

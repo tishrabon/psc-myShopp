@@ -13,23 +13,18 @@ const UpdateUser = () => {
   const updateStyle = {
     welcome: `p-3 centaY rounded-[10px] bg-green-600 text-white flex-wrap my-2 w-[90%]`,
     forma: `flex flex-col justify-between items-start gap-y-3 resmenu-shadow p-5 rounded-[10px] w-[90%]`,
-    gapX2: `flex flex-row gap-x-3 items-center`,
-    gapX: `grid grid-cols-[80px_1fr] text-sm items-center`,
+    gapX: `grid grid-cols-[65px_1fr] text-sm sm:text-sm items-center`,
 
-    gapXX2: `flex flex-row gap-x-3 items-start`,
-    gapXX: `grid grid-cols-[80px_1fr] text-sm`,
-
-    usernames: `flex flex-col gap-y-2`,
+    gapXX: `grid grid-cols-[65px_1fr] text-sm sm:text-sm`,
     
-    inputa: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-[200px] ss:w-[250px] sm:w-[320px]`, 
+    inputa: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-[150px] xs:w-[200px]`, 
 
-    inputaMini: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-[150px] ss:w-[200px]`,
+    inputaMini: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-[150px] xs:w-[200px]`,
     
-    inputaLtd: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-[150px] ss:w-[200px]`,
+    inputaLtd: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-[150px] xs:w-[200px]`,
 
     button: `bg-green-600 text-white rounded border-none px-4 py-1 mt-4`,
     button2: `bg-gray-300 mt-[60px] m-1 p-1 rounded-md w-[60px]`,
-    button3: `bg-green-300 m-1 p-1 rounded-md`,
 
     addressSection: `grid grid-rows-[30px_1fr] gap-y-1 overflow-hidden w-[100%] text-sm border p-1 rounded-md`, 
     addressButton:`border-none rounded-sm bg-white px-1 mr-2`,
@@ -276,7 +271,7 @@ const UpdateUser = () => {
 
 
   return (
-    <section className="centaY w-[370px] xs:w-[400px] ss:w-[450px] sm:w-[550px]"> 
+    <section className="centaY w-full sm:w-[550px]"> 
 
       <div className={`${updateStyle.welcome}`}>Update Your Basic Informations Here </div>
 
@@ -318,13 +313,13 @@ const UpdateUser = () => {
                       onChange={e => setUsername((e.target.value).toLowerCase())}
                     />  
 
-                    <div className="centaX my-1 flex flex-row items-start">
+                    <div className="flex flex-col items-start my-1 flex flex-row items-start">
 
                       <button className="ml-1 p-1 border-none rounded-md text-xs bg-red-600 text-white" 
                       onClick={(e) => checkUsername(e, username)}
                       >Click</button>
 
-                      <p className="mx-1 text-xs text-red-500">{unAvail}</p>
+                      <p className="mx-1 text-xs text-blue-600">{unAvail}</p>
                     </div>
                   </div>
                   

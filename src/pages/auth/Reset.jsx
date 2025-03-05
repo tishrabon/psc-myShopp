@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const Reset = () => {
   const res = {    
-    forma: `centaY resmenu-shadow p-5 rounded-[10px] max-w-[350px] min-w-[200px]`,
+    forma: `centaY resmenu-shadow p-5 rounded-[10px] max-w-[350px] w-full`,
     inputa: `border-[1px] bg-gray-100 p-1 m-1 rounded-[5px] w-full`,
     resetbtn: `border-[1px] bg-red-600 text-white p-1 m-1 rounded-[5px] w-full h-10`,  
   }

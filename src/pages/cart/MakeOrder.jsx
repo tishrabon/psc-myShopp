@@ -176,7 +176,7 @@ export const MakeOrder = () => {
         {/* OTHER SECTION */}
         {orderings && orderings.products.length !== 0 ? 
           <div className={styles.others}>
-            <p className="px-2 mb-2">Click the address below to change your shipping address</p>   
+            <p className="px-2 mb-2 text-blue-500 my-3">Click the address below to change your shipping address</p>   
 
             {order ? 
               <button className="bg-gray-200 p-1 text-[13px] rounded-md">

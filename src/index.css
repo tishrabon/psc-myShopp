@@ -139,3 +139,8 @@ h6 {
 html {
   scroll-padding-top: 250px; /* Adjust according to your header's height */
 }
+
+.textbender {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
